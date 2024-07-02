@@ -12,7 +12,7 @@ public class Bishop extends Piece {
     };
 
         public Bishop(int player) {
-            super(player, moveSetBishop, 0, false, true);
+            super("Bishop", player, moveSetBishop, 0, false, true);
         }
     
 }

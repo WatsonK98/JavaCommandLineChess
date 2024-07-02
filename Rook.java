@@ -12,6 +12,6 @@ public class Rook extends Piece {
     };
     
     public Rook(int player) {
-        super(player, moveSetRook, 0, false, true);
+        super("Rook", player, moveSetRook, 0, false, true);
     }
 }

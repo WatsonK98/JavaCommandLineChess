@@ -1,12 +1,14 @@
 public class Piece {
 
+    String name;
     int owner;
     int[][] moveSet;
     int moves;
     boolean isKing;
     boolean hasMagnitude;
 
-    public Piece(int owner, int[][] moveSet, int moves, boolean isKing, boolean hasMagnitude) {
+    public Piece(String name, int owner, int[][] moveSet, int moves, boolean isKing, boolean hasMagnitude) {
+        this.name = name;
         this.owner = owner;
         this.moveSet = moveSet;
         this.moves = moves;
@@ -14,11 +16,16 @@ public class Piece {
         this.hasMagnitude = hasMagnitude;
     }
 
-    public Piece(int owner, int[][] moveSet, int moves, boolean isKing) {
+    public Piece(String name, int owner, int[][] moveSet, int moves, boolean isKing) {
+        this.name = name;
         this.owner = owner;
         this.moveSet = moveSet;
         this.moves = moves;
         this.isKing = isKing;
+    }
+
+    public String getName() {
+        return this.name;
     }
 
     public int getOwner() {
@@ -31,6 +38,14 @@ public class Piece {
     
     public int getMoves() {
         return this.moves;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setMoveSet(int[][] moveSet) {
+        this.moveSet = moveSet;
     }
 
     public void setMoves(int increment) {

@@ -20,6 +20,6 @@ public class Knight extends Piece {
     };
     
     public Knight(int player) {
-        super(player, moveSetKnight, 0, false, false);
+        super("Knight", player, moveSetKnight, 0, false, false);
     }
 }
