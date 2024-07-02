@@ -40,14 +40,6 @@ public class Piece {
         return this.moves;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setMoveSet(int[][] moveSet) {
-        this.moveSet = moveSet;
-    }
-
     public void setMoves(int increment) {
         this.moves += increment;
     }
