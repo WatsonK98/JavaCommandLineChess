@@ -7,6 +7,7 @@ public class Piece {
     boolean isKing;
     boolean hasMagnitude;
 
+    //Default constructor
     public Piece(String name, int owner, int[][] moveSet, int moves, boolean isKing, boolean hasMagnitude) {
         this.name = name;
         this.owner = owner;
@@ -16,6 +17,7 @@ public class Piece {
         this.hasMagnitude = hasMagnitude;
     }
 
+    //Overloaded constructor because of special pawn rule
     public Piece(String name, int owner, int[][] moveSet, int moves, boolean isKing) {
         this.name = name;
         this.owner = owner;
