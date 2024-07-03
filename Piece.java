@@ -4,25 +4,28 @@ public class Piece {
     int owner;
     int[][] moveSet;
     int moves;
+    int[] position;
     boolean isKing;
     boolean hasMagnitude;
 
     //Default constructor
-    public Piece(String name, int owner, int[][] moveSet, int moves, boolean isKing, boolean hasMagnitude) {
+    public Piece(String name, int owner, int[][] moveSet, int moves, int[] position, boolean isKing, boolean hasMagnitude) {
         this.name = name;
         this.owner = owner;
         this.moveSet = moveSet;
         this.moves = moves;
+        this.position = position;
         this.isKing = isKing;
         this.hasMagnitude = hasMagnitude;
     }
 
     //Overloaded constructor because of special pawn rule
-    public Piece(String name, int owner, int[][] moveSet, int moves, boolean isKing) {
+    public Piece(String name, int owner, int[][] moveSet, int moves, int[] position, boolean isKing) {
         this.name = name;
         this.owner = owner;
         this.moveSet = moveSet;
         this.moves = moves;
+        this.position = position;
         this.isKing = isKing;
     }
 

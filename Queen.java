@@ -19,7 +19,7 @@ public class Queen extends Piece {
         {-1,-1}
     };
     
-    public Queen(int player) {
-        super("Queen", player, moveSetQueen, 0, false, true);
+    public Queen(int player, int[] position) {
+        super("Queen", player, moveSetQueen, 0, position, false, true);
     }
 }

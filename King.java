@@ -19,7 +19,7 @@ public class King extends Piece {
         {-1,0}
     };
     
-    public King(int player) {
-        super("King", player, moveSetKing, 0, true, false);
+    public King(int player, int[] position) {
+        super("King", player, moveSetKing, 0, position, true, false);
     }
 }

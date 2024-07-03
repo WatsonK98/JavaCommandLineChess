@@ -11,8 +11,8 @@ public class Bishop extends Piece {
         {-1,-1}
     };
 
-        public Bishop(int player) {
-            super("Bishop", player, moveSetBishop, 0, false, true);
+        public Bishop(int player, int[] position) {
+            super("Bishop", player, moveSetBishop, 0, position, false, true);
         }
-    
+
 }
