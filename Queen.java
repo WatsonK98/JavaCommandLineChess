@@ -20,6 +20,6 @@ public class Queen extends Piece {
     };
     
     public Queen(int player, int[] position) {
-        super("Queen", player, moveSetQueen, 0, position, false, true);
+        super("Qn", player, moveSetQueen, 0, position, false, true);
     }
 }

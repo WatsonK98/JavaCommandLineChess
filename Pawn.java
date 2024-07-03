@@ -6,7 +6,7 @@ public class Pawn extends Piece {
     };
     
     public Pawn(int player, int[] position) {
-        super("Pawn", player, moveSetPawn, 0, position,false);
+        super("Pn", player, moveSetPawn, 0, position,false);
     }
 
     @Override
