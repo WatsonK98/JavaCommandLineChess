@@ -45,8 +45,16 @@ public class Piece {
         return this.moves;
     }
 
+    public int[] getPosition() {
+        return this.position;
+    }
+
     public void setMoves(int increment) {
         this.moves += increment;
+    }
+
+    public void setPosition(int[] position) {
+        this.position = position;
     }
 
     public boolean isKing() {
